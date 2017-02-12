@@ -6,4 +6,5 @@ export default function(application, sessionName){
   application.inject(sessionFactoryName, 'torii', 'service:torii');
   application.inject('route',      sessionName, sessionFactoryName);
   application.inject('controller', sessionName, sessionFactoryName);
+  application.inject('service', sessionName, sessionFactoryName);
 }
